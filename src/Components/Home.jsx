@@ -60,11 +60,11 @@ function Home({ addToCart }) {
                     {products.map(product => (
                         <div key={product.id} className="rounded col-sm-6 col-lg-4 col-xl-3">
                             <div className='rounded shadow d-flex justify-content-center align-items-center'>
-                                <Card className='d-flex flex-column border-0 gap-2'>
+                                <Card className='d-flex flex-column border-0 gap-2 p-3'>
                                     <div className='img-box text-center mt-2'>
                                         <img src={product.image} alt={product.title} className='img-fluid' />
                                     </div>
-                                    <Card.Body className='py-4'>
+                                    <Card.Body className='p-0'>
                                         <p className='fw-bold'>{product.title}</p>
                                         <Card.Text>Price: ${product.price}</Card.Text>
                                         <div className='d-flex justify-content-between align-items-center'>
