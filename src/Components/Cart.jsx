@@ -16,7 +16,7 @@ function Cart({ cartItems, removeFromCart, updateQuantity }) {
 
     return (
         <div className='container py-lg-5 py-2'>
-            <h1 className='text-center text-md-start'>Cart</h1>
+            <h1 className='text-center text-md-start my-3'>Cart</h1>
             <div className='row  gy-3 justify-content-start'>
                 <div className='col-md-9'>
                     <div className='row gy-3 justify-content-start'>

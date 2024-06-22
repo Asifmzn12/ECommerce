@@ -10,7 +10,7 @@ function Footer() {
         <div className="container py-2 py-md-3 py-lg-5 overflow-hidden">
           <div className="row py-lg-3 py-1  justify-content-between align-items-start py-4">
             <div className=" About details col-12 col-lg-2 d-flex flex-column gap-2 my-lg-0 my-3">
-              <img src='./images/Logo.png' className='img-fluid footerlogo'></img>
+              <h4 className=''>E-Commerce</h4>
               <p className=''>A short text explaining
                 why my startup is so cool
               </p>
@@ -24,11 +24,6 @@ function Footer() {
                     </a>
                     </li>
 
-                    {/*  <li> <a className=''>
-                            <FaXTwitter className='icon' size={"20px"} />
-                        </a>
-                        </li>
-*/}
                     <li> <a href="#">
                       <FaLinkedinIn className='icon' size={"25px"} />
                     </a>
@@ -47,11 +42,7 @@ function Footer() {
                         <BiLogoGmail className='icon' size={"25px"} />
                       </a>
                     </li>
-                    {/*    <li> <a>
-                            <FaInstagram className='icon' size={"20px"} />
-                        </a>
-                        </li>
-                         */}
+                   
                   </ul>
 
 
@@ -67,7 +58,6 @@ function Footer() {
               <div className="navlinks">
                 <h5 className='nav-title'>About Us</h5>
                 <ul className=" list-unstyled footernav" >
-                  <li><a href=''>Our Story</a></li>
                   <li><a href=''>Our Mission</a></li>
                   <li><a href=''>Our Team</a></li>
                   <li><a href=''>Contact Us</a></li>
@@ -76,22 +66,20 @@ function Footer() {
             </div>
             <div className="col-lg-2 col-6 mt-3 mt-md-0 col-sm-6 d-flex flex-column justify-content-center align-items-start align-items-lg-center">
               <div className="navlinks">
-                <h5 className='nav-title'>Get Involved</h5>
+                <h5 className='nav-title'>Services</h5>
                 <ul className=" list-unstyled footernav">
-                  <li><a href=''>Volunteer</a></li>
+                  <li><a href=''>Stories</a></li>
                   <li><a href=''>Events</a></li>
                   <li><a href=''>Partners</a></li>
-                  <li><a href=''>Careers</a></li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-2 col-12 mt-3 mt-md-0 col-sm-6 d-flex flex-column justify-content-center align-items-start align-items-lg-center">
               <div className="navlinks">
-                <h5 className='nav-title'>Limitless</h5>
+                <h5 className='nav-title'>E-Commerce</h5>
                 <ul className=" list-unstyled footernav">
                   <li><a href=''>Blog</a></li>
                   <li><a href=''>Careers</a></li>
-                  <li><a href=''>Donate</a></li>
 
 
                 </ul>

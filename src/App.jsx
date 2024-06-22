@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductDetails from './Components/ProductDetails';
 import Cart from './Components/Cart';
@@ -46,7 +46,7 @@ function App() {
         <>
             <Router>
                 <Header />
-                
+                <ScrollToTop/>
                 <Routes>
                     <Route path="/" element={<Home addToCart={addToCart} />} />
                     <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />

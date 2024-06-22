@@ -3,8 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "../assets/css/header.css";
-import { FaCartPlus } from "react-icons/fa";
-
 function Header() {
   return (
     <div className='container-fluid pt-2 pt-md-3 justify-content-center align-items-center'>
@@ -12,7 +10,7 @@ function Header() {
         <Navbar key={expand} expand={expand} className="bg-inherit py-2 px-lg-3 px-0" fixed='top'>
           <div className='container mx-lg-auto p-0 py-2'>
             <Navbar.Brand as={Link} to="/" className='ms-3 ms-lg-0'>
-              <img src='./images/Logo.png' alt="Logo" style={{ maxWidth: "70%" }} />
+            <h4>E-Commerce</h4>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
