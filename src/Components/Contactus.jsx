@@ -57,7 +57,7 @@ function Contactus() {
 
                     </div>
                     <div className="col-md-6 d-md-block d-none">
-                        <img src="images/contactus.png" className="img-fluid rounded"></img>
+                        <img src="images/bgabout.png" className="img-fluid rounded"></img>
 
                     </div>
 

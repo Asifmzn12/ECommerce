@@ -35,11 +35,11 @@ function ProductDetails({ addToCart }) {
                         <div className='img-box'>
                             <img src={product.image} alt={product.title} className='img-fluid' />
                         </div>
-                        <Card.Body className='p-0 details'>
+                        <Card.Body className='py-4 details'>
                             <h4 className='text-wrap mt-3'>{product.title}</h4>
                             <p>{product.description}</p>
                             <Card.Text><span className='fw-bold'>Category:</span> {product.category}</Card.Text>
-                            <div className='d-flex align-items-center gap-4'>
+                            <div className='d-flex align-items-center gap-4 justify-content-between'>
                                 <Card.Text className='m-0'><span className='fw-bold'>Price: </span>${product.price}</Card.Text>
                                 <Button variant="primary" onClick={() => handleAddToCart(product)}>Add to Cart</Button>
                             </div>
