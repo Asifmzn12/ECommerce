@@ -21,7 +21,7 @@ function Cart({ cartItems, removeFromCart, updateQuantity }) {
                 <div className='col-md-9'>
                     <div className='row gy-3 justify-content-start'>
                         {cartItems.map(item => (
-                            <div key={item.id} className='col-md-4 d-flex'>
+                            <div key={item.id} className='col-md-6 col-lg-5 col-xl-4 d-flex'>
                                 <Card className=' py-2 border-0'>
                                     <div className='img-box text-start'>
                                         <img src={item.image} alt={item.title} className='img-fluid' />

@@ -36,7 +36,7 @@ function ProductDetails({ addToCart }) {
                             <img src={product.image} alt={product.title} className='img-fluid' />
                         </div>
                         <Card.Body className='p-0 details'>
-                            <h4 className='text-wrap'>{product.title}</h4>
+                            <h4 className='text-wrap mt-3'>{product.title}</h4>
                             <p>{product.description}</p>
                             <Card.Text><span className='fw-bold'>Category:</span> {product.category}</Card.Text>
                             <div className='d-flex align-items-center gap-4'>
