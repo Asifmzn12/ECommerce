@@ -1,4 +1,4 @@
-import { contactUsData } from './config/contactus';
+import contactUsData from './config/Contactus'
 import Form from 'react-bootstrap/Form';
 import '../assets/css/contact.css'
 
