@@ -58,10 +58,10 @@ function Home({ addToCart }) {
             <div className="product-list my-4 py-md-4 py-2 container">
                 <div className='row gy-5 justify-content-between'>
                     {products.map(product => (
-                        <div key={product.id} className="rounded col-sm-6 col-lg-4 col-xl-3">
-                            <div className='rounded shadow d-flex justify-content-center align-items-center'>
+                        <div key={product.id} className="rounded col-sm-6 col-lg-4 col-xl-3 hover">
+                            <div className='rounded shadow d-flex justify-content-center  align-items-center'>
                                 <Card className='d-flex flex-column border-0 gap-2 p-3'>
-                                    <div className='img-box text-center mt-2'>
+                                    <div className='img-box text-start text-md-center  mt-2'>
                                         <img src={product.image} alt={product.title} className='img-fluid' />
                                     </div>
                                     <Card.Body className='p-0'>

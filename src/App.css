@@ -44,6 +44,13 @@ body{
     box-shadow: #fff;
     border-radius: 16px !important;
 }
+.hover{
+  transition: all 0.2s ease-in;
+
+}
+.hover:hover{
+  transform: translateY(-5px);
+}
 
 
 
