@@ -1,0 +1,81 @@
+/* Add a default style for the underline */
+.navbar-nav a {
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-left: 10px;
+}
+
+/* Add the underline element */
+.navbar-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: transparent; /* Set the initial color */
+  transform: scaleX(0); /* Initially hide the underline */
+  transform-origin: 0 100%;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Change the color and reveal the underline on hover */
+.navbar-nav a:hover::before {
+  transform: scaleX(1);
+  background-color: var(--primary-color); /* Set the desired hover color */
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  transition: all 0.5s ease-out;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav a:hover {
+  color:var(--primary-color) !important;
+  transform: scale(0.96);
+}
+
+.navbar {
+  /* border-bottom: 1px solid var(--border-color); */
+  position: fixed;
+  z-index: 88888;
+  top: 0;
+  background-color: var(--white);
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.getStarted {
+  letter-spacing: 1px;
+}
+
+.offcanvas-end {
+  z-index: 99999;
+}
+.primarybtn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--black);
+  border-right: 0;
+  border-bottom: 0;
+  box-shadow: 5px 5px 0px rgba(236, 96, 65, 0.8), 10px 10px 1px rgba(236, 96, 65, 0.6);
+ border-radius: 3px;
+}
+.offcanvas.offcanvas-end{
+  width: 240px !important;
+}
+
+
+

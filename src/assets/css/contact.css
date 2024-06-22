@@ -1,0 +1,4 @@
+.socialbox{
+    background: linear-gradient(to right, rgba(236, 96, 65, 0.1) 100%, rgba(255, 255, 255, 1) 100%);
+    border-bottom: 2px solid var(--primary-color);
+}

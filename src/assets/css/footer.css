@@ -1,0 +1,59 @@
+.footernav a{
+    text-decoration: none !important;
+    
+}
+.About h5{
+    font-size: 24px;
+    font-weight: 700;
+}
+.footernav{
+    display: flex;
+    flex-direction: column;
+   row-gap: 14px;
+}
+.nav-title{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.footerbg{
+    width: 100%;
+    opacity: 1; 
+
+
+}
+.navlinks{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.footernav a, .About p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-color) !important;
+    transition: all 0.4s ease;
+}
+.footernav a:hover{
+    text-decoration: underline !important;
+    color:var(--text-muted);
+    text-decoration-color: var(--primary-color) !important;
+    text-decoration-thickness: 2px !important;
+text-decoration-style: solid;
+text-underline-offset: 4px;
+
+}
+
+.footerbg .lastChild a{
+    line-height: 18px; 
+}
+.footerlogo{
+    max-width: 150px;
+}
+li svg{
+    color:var(--primary-color) !important;
+}

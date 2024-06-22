@@ -1,0 +1,95 @@
+
+/* form css */
+.form-group {
+    position: relative;
+  }
+  
+  .form-group label {
+    pointer-events: none;
+    background: #fff;
+    
+    position:absolute;
+    left: 15px;;
+    top: 15px;;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+  }
+  
+  input:focus + label, input:not(:placeholder-shown) + label,
+  textarea:focus + label, textarea:not(:placeholder-shown) + label {
+      opacity: 1;
+      transform: scale(0.9) translateY(-120%) translateX(-20px);
+      font-size: 20px;
+  }
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.04rem var(--primary-color);
+}
+
+
+/* form css end */
+
+/* .img-box img{
+    max-width: 200px;
+    max-height: 135px;
+} */
+.img-box {
+    width: 250px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+
+  }
+  
+  .img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits within the box without distortion */
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+  .hover{
+    transition: all 0.3s ease-in;
+    
+  }
+  .hover:hover .img-box img{
+    transform: scale(1.02);
+  }
+  .product-item{
+   transition: all 0.3s ease-in;
+  
+  }
+  .btn-primary{
+    background-color: var(--primary-color) !important;
+    outline: none !important;
+    border: 0 !important;
+  }
+  p{
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1 !important;
+  }
+  .details p{
+    overflow: hidden;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1 !important;
+  }
+  .btn{
+    transition: all 0.3s ease;
+  }
+  .btn:hover{
+    transform: scale(1.06);
+  }
+  .Toastify__toast-container{
+    top: 60px;
+    z-index: 9999 !important;
+    font-family: inherit !important;
+  }
+  .Toastify__toast{
+    font-family: inherit !important;
+  }
