@@ -1,13 +1,14 @@
 
-import { FaAddressBook, FaEnvelope, FaLinkedin, } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+
 
 
 export const contactUsData=[
 
 {
     id:1,
-    icon:FaAddressBook,
+    icon:FaMapMarkerAlt,
     title:"Address",
     para: "Abul Fazal Enclave, Delhi",
 
