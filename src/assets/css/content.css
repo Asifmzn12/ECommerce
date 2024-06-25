@@ -95,6 +95,15 @@ height: 500px;
 
 background-size: cover;
   }
+  @media(max-width:576px){
+    .bg-img{
+      height: 350px;
+      
+    }
+    .rounded{
+      border-radius: 0px !important;
+    }
+  }
   .textbox{
   position: absolute;
   top: 50%;
