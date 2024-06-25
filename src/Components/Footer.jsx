@@ -119,12 +119,13 @@ function Footer() {
             </div>
 
           </div>
+
+          <div className='text-center  details'>
+            <p className='mb-0'>©2024 ECom. All Rights Reserved. Made by Asif Ali</p>
+  
+          </div>
         </div>
 
-        <div className='text-center mb-3 details'>
-          <p className='mb-0'>©2024 ECom. All Rights Reserved. Made by Asif Ali</p>
-
-        </div>
       </footer>
     </>
   )

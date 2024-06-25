@@ -49,13 +49,14 @@ function App() {
             <ScrollToTop/>
                 <Header />
               
-              
-                    <Routes>
-                        <Route path="/" element={<Home addToCart={addToCart} />} />
-                        <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />
-                        <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />} />
-                        <Route path="/Contactus" element={<Contactus />} />
-                    </Routes>
+                <div id='content'>
+                <Routes>
+                    <Route path="/" element={<Home addToCart={addToCart} />} />
+                    <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />
+                    <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />} />
+                    <Route path="/Contactus" element={<Contactus />} />
+                </Routes>
+                </div>
            
                 <Footer />
 
