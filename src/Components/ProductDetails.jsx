@@ -34,6 +34,8 @@ function ProductDetails({ addToCart }) {
     if (loading) {
         return (
             <div className="container text-center py-5">
+            <h1 className='text-start my-3'>Product Details</h1>
+
                 <Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </Spinner>
@@ -43,6 +45,8 @@ function ProductDetails({ addToCart }) {
     }
     return (
         <div className="container py-5">
+        <h1 className='text-start my-3'>Product Details</h1>
+
             <div className='row'>
                 <div className='col-md-5'>
                     <div className="shadow p-3 mb-5 align-items-start">
