@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../assets/css/hero.css';
+import '../assets/css/content.css';
 import Spinner from 'react-bootstrap/Spinner'; 
 
 function Home({ addToCart }) {
@@ -53,10 +53,10 @@ function Home({ addToCart }) {
     return (
         <div className="container-fluid container-lg py-4 py-lg-5 position-relative">
             <div>
-                <h2 className="my-3 text-center text-md-start"><span>Products</span></h2>
+                <h2 className="my-3 text-center "><span>Products</span></h2>
             </div>
             <div className="product-list my-4 py-md-4 py-2 container">
-                <div className='row gy-5 justify-content-between'>
+                <div className='row gy-5 justify-content-start'>
                     {products.map(product => (
                         <div key={product.id} className="rounded col-sm-6 col-lg-4 col-xl-3 hover">
                             <div className='rounded shadow d-flex justify-content-center  align-items-center'>

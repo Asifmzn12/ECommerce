@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductDetails from './Components/ProductDetails';
 import Cart from './Components/Cart';
@@ -7,11 +7,10 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
 import Contactus from './Components/Contactus';
-import ScrollToTop from './Components/ScrollToTop';
-
+import ScrollToTop from "./Components/ScrollToTop"
 function App() {
     const [cartItems, setCartItems] = useState([]);
-
+  
     useEffect(() => {
         const savedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         setCartItems(savedCartItems);
@@ -45,15 +44,21 @@ function App() {
     return (
         <>
             <Router>
+           
+
+            <ScrollToTop/>
                 <Header />
-                <ScrollToTop/>
-                <Routes>
-                    <Route path="/" element={<Home addToCart={addToCart} />} />
-                    <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />
-                    <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />} />
-                    <Route path="/Contactus" element={<Contactus/>} />
-                </Routes>
+              
+              
+                    <Routes>
+                        <Route path="/" element={<Home addToCart={addToCart} />} />
+                        <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />
+                        <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />} />
+                        <Route path="/Contactus" element={<Contactus />} />
+                    </Routes>
+           
                 <Footer />
+
             </Router>
         </>
     );

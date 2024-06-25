@@ -89,3 +89,16 @@
   .Toastify__toast{
     font-family: inherit !important;
   }
+  .bg-img{
+background:linear-gradient(rgb(32 51 100 / .8),rgb(32 51 100 / .8)),url("./images/contactbg.jpg") center center no-repeat;
+height: 500px;
+
+background-size: cover;
+  }
+  .textbox{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  }

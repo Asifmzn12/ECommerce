@@ -5,7 +5,7 @@ import { BiLogoFacebook, BiLogoGmail } from 'react-icons/bi'
 import '../assets/css/footer.css'
 function Footer() {
   return (
-    <div className=''>
+    <>
       <footer className="footer footerbg container-fluid ">
         <div className="container py-2 py-md-3 py-lg-5 overflow-hidden">
           <div className="row py-lg-3 py-1  justify-content-between align-items-start py-4">
@@ -121,12 +121,12 @@ function Footer() {
           </div>
         </div>
 
-        <div className='text-center'>
-          <p className='mb-0'>©2020 Limitless. Limitless is a 501(c)(3) tax-exempt charity. All Rights Reserved. EIN: 90-1302804</p>
+        <div className='text-center mb-3 details'>
+          <p className='mb-0'>©2024 ECom. All Rights Reserved. Made by Asif Ali</p>
 
         </div>
       </footer>
-    </div>
+    </>
   )
 }
 

@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
+import Spinner from 'react-bootstrap/Spinner'; 
+
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
@@ -11,11 +13,15 @@ import 'react-toastify/dist/ReactToastify.css';
 function ProductDetails({ addToCart }) {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true);
+
 
     useEffect(() => {
         axios.get(`https://fakestoreapi.com/products/${id}`)
             .then(response => {
                 setProduct(response.data);
+                setLoading(false);
+
             })
             .catch(error => console.error('Error fetching the product details:', error));
     }, [id]);
@@ -25,8 +31,16 @@ function ProductDetails({ addToCart }) {
         toast.success('Item added to cart successfully!');
     };
 
-    if (!product) return <div>Loading...</div>;
-
+    if (loading) {
+        return (
+            <div className="container text-center py-5">
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+              
+            </div>
+        );
+    }
     return (
         <div className="container py-5">
             <div className='row'>

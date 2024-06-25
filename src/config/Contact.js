@@ -9,7 +9,7 @@ export const contactUsData=[
     id:1,
     icon:FaAddressBook,
     title:"Address",
-    para: "South East Delhi",
+    para: "Abul Fazal Enclave, Delhi",
 
 },
 {

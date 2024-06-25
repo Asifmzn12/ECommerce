@@ -5,7 +5,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import "../assets/css/header.css";
 function Header() {
   return (
-    <div className='container-fluid pt-2 pt-md-3 justify-content-center align-items-center'>
+    <>
       {['lg'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-inherit py-2 px-lg-3 px-0" fixed='top'>
           <div className='container mx-lg-auto p-0 py-2'>
@@ -31,7 +31,7 @@ function Header() {
           </div>
         </Navbar>
       ))}
-    </div>
+    </>
   );
 }
 
